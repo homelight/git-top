@@ -26,9 +26,10 @@ func (p FileCounts) Less(i, j int) bool { return p[i].count > p[j].count }
 
 func main() {
 	app := &cli.App{
-
-		Name:  "git top",
-		Usage: "view the top analytics for a git log.",
+		Name:            "git top",
+		Usage:           "view the top analytics for a git log.",
+		HideHelpCommand: true,
+		HelpName:        "git top",
 		Commands: []*cli.Command{
 			{
 				Name:  "files",

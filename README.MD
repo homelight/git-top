@@ -16,11 +16,10 @@ NAME:
    git top - view the top analytics for a git log.
 
 USAGE:
-   git-top [global options] command [command options] [arguments...]
+   git top [global options] command [command options] [arguments...]
 
 COMMANDS:
-   files    view the most changed files for a time period.
-   help, h  Shows a list of commands or help for one command
+   files  view the most changed files for a time period.
 
 GLOBAL OPTIONS:
    --help, -h  show help (default: false)
@@ -34,10 +33,10 @@ The `files` command gives you visibility into the most changed files for a time 
 > git top files --help
 
 NAME:
-   git-top files - view the most changed files for a time period.
+   git top files - view the most changed files for a time period.
 
 USAGE:
-   git-top files [command options] [arguments...]
+   git top files [command options] [arguments...]
 
 OPTIONS:
    --after value   date to start lookback. Format: YYYY-MM-DD (default: two weeks ago)
@@ -65,3 +64,7 @@ OPTIONS:
 git clone git@github.com:homelight/git-top.git
 go install
 ```
+
+## Troubleshooting
+
+1. If the binary is not found when you run `git top` make sure your $GOPATH/bin is part of your path.
